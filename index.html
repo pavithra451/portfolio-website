@@ -1,1 +1,121 @@
-<!DOCTYPE html><html><head><title>Home</title><link rel='stylesheet' href='style.css'></head><body><header><h1>Portfolio</h1></header><main><p>Home page</p></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio Website">
+    <meta name="keywords" content="Portfolio, HTML5, CSS3, Responsive Design">
+    <meta name="author" content="Pavithra D">
+
+    <title>Portfolio | Home</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>My Portfolio</h1>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-btn">🌙 Dark Mode</button>
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="hero-text">
+<h2>Hello, I'm Pavithra</h2>
+
+<p>
+I am a Computer Science Engineering student passionate about
+Web Development, Responsive Design, and Modern HTML5 & CSS3.
+</p>
+
+<a href="projects.html" class="btn">
+View My Projects
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img
+src="https://via.placeholder.com/350"
+alt="Portfolio Image">
+
+</div>
+
+</section>
+
+<section class="skills">
+
+<h2>Skills</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>HTML5</h3>
+<p>Semantic and Accessible Web Design</p>
+</div>
+
+<div class="card">
+<h3>CSS3</h3>
+<p>Grid, Flexbox, Responsive Layouts</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Interactive User Interfaces</p>
+</div>
+
+<div class="card">
+<h3>GitHub</h3>
+<p>Version Control and Deployment</p>
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 Pavithra D | All Rights Reserved
+</p>
+
+</footer>
+
+<script>
+
+const btn=document.getElementById("theme-btn");
+
+btn.onclick=function(){
+
+document.body.classList.toggle("dark");
+
+if(document.body.classList.contains("dark"))
+
+btn.innerHTML="☀️ Light Mode";
+
+else
+
+btn.innerHTML="🌙 Dark Mode";
+
+}
+
+</script>
+
+</body>
+  </html>
